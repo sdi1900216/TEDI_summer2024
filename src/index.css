@@ -1,13 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./components/Assets/north-america-nebula-beautiful-space-star-purple-style-universe-black-and-red-cosmic-wallpaper-preview.jpg);
 }
+
+/* Error page/ Not found  */
+.warning_text {
+  
+  background: red;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.warning_text  h1 {
+  background: red;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+/*log in & sign up */
+.wrapper {
+  width: 420px;
+  background: goldenrod;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color:#fff;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  transform: traslateY(-50%); 
+  font-size: 25px;
+
+}
+
+.wrapper button {
+  width:100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+
+.wrapper button:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: #fff;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+

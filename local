@@ -1,0 +1,19 @@
+
+
+REACT_APPWRITE_PROJECT_ID = '66df28f10010998e9b7f'
+REACT_APPWRITE_URL = 'https://cloud.appwrite.io/v1'
+
+if(!phone_pattern.test(values.phone)) {
+    error.phone= "Phone didn't match."
+}
+else{
+    error.phone=''
+}
+
+                <div className="input-box">
+                     <input type='text'  placeholder='Phone number' name='phone' onChange={handleInput} required/>
+                     {errors.phone && <span className='text'> {errors.phone} </span>} 
+                     <FaPhoneAlt className='icon'/>
+                </div> 
+
+                const phone_pattern= /^[0-9\b]+$/

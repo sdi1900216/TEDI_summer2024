@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom'
+
+import Login from '../../tedi_app/src/pages/Login'
+import Signup from '../../tedi_app/src/pages/Signup'
+import Home from '../../tedi_app/src/pages/Home'
+import NotFound from '../../tedi_app/src/pages/NotFound'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+ 
+ return (
+    <div>
+
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path='/Login'element={<Login />} />
+        <Route path='/Signup'element={<Signup />} />
+        <Route path='*' element={<NotFound /> } />
+        { }
+
+        <Route path='/Home'element={<Home />} />
+      </Routes>
+ 
     </div>
   );
 }
 
 export default App;
+
